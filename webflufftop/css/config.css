@@ -1,0 +1,81 @@
+:root {
+	/* Colors */
+	--primary: #2c2947;
+	--primary-light: #3d2f74;
+	--primary-lighter: #312783;
+	--primary-sat: #614993;
+	--primary-sat-light: #ac98d6;
+	--primary-clear: #2c2947a8;
+	--secondary: #3364d4;
+	--secondary-light: #5c82e8;
+	--secondary-lighter: #6f7edc;
+	--secondary-sat: #40a9f4;
+	--secondary-desat: #6974db;
+	--tertiary: #9479df;
+	--tertiary-dark: #7f77c1;
+	--tertiary-light: #deaceb;
+	--tertiary-lighter: #ffdafd;
+	--accent: #ffb317;
+	--accent-dark: #b96800;
+	--neutral: #ffffff;
+	--neutral-dark: #d4d4d4;
+	--neutral-darker: #aba9b5;
+	--card: linear-gradient(
+		221.77deg,
+		rgba(255, 255, 255, 0.5) -42.82%,
+		transparent 76.41%
+	);
+
+	/* Vars */
+	--qtnProg: 0%;
+	--ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+	--anim: 0.175s var(--ease);
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Space Grotesk";
+	src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf")
+			format("truetype"),
+		url("../fonts/SpaceGrotesk-VariableFont_wght.ttf")
+			format("truetype-variations");
+	font-weight: 300 400 700;
+}
+@font-face {
+	font-family: "Bangers";
+	src: url("../fonts/Bangers-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: "Space Grotesk", sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+button {
+	border: 0;
+	cursor: pointer;
+	background: none;
+}
+button * {
+	user-select: none;
+	pointer-events: none;
+}
+li {
+	list-style: none;
+}
